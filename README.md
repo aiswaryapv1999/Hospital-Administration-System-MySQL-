@@ -55,11 +55,13 @@ The following real‑world business requirements were implemented using SQL:
 
 *Key Findings & Insights*
 
-* Certain doctors handle significantly more appointments, indicating higher workload
-* Department‑wise analysis helps identify staffing distribution
-* Billing analysis highlights unpaid bills that require follow‑up
-* Revenue calculations provide insights into hospital financial performance
-* Appointment trends help understand doctor‑patient engagement
+* Department-Level Insights: GROUP BY queries reveal how doctors are distributed across departments.
+* Revenue Insights: Billing records enable calculation of total revenue and help identify pending payments.
+* Appointment Analysis: Tracking appointment counts per doctor provides insight into workload distribution.
+* Doctor–Patient Association: JOIN operations are used to connect patients with their respective doctors and departments.
+* Department Workload Balance: Comparing appointment counts across departments helps identify over- or under-utilized departments.
+* Advanced SQL Application: Subqueries and HAVING clauses support deeper analysis, such as identifying high-value bills and doctors with multiple consultations.
+* Data Consistency: Foreign key constraints maintain accuracy and integrity across all hospital-related data.
 
 *Conclusion*
 
